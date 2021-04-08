@@ -1,4 +1,80 @@
 body {
-    background-image: url(assets/background.gif);
-  
+    background: linear-gradient(70deg, blue, pink);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 65px;
+  -webkit-box-shadow: 6px 8px 6px 6px#FFFF66;
+  -moz-box-shadow: 6px 8px 6px 66x#FFFF66;
+  box-shadow: 6px 8px 6x 6px #FFFF66;  
 }
+@font-face {
+    font-family: "zerovelo.ttf" ;
+    src: url(/assets/zero/zerovelo.ttf);
+ }
+.menu{
+overflow: hidden;
+font-family:"zerovelo.ttf" ;
+
+
+}
+
+.menu a {
+ 
+    color:#b91567;
+    text-align: center;
+    padding:10px 26px;
+    text-decoration: none;
+    font-size: 77px;
+    font-stretch: expanded;
+  }
+  
+  /* Change the color of links on hover */
+  .menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .menu a.active {
+    color:purple;
+  }
+.art-image {
+    position: relative;
+    top: 20%;
+width: 200px;
+height: 200px;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+  }
+.art-container {
+    position: relative;
+    top: 20%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid wheat;
+    border-radius: 25px;
+  }
+.image-container {
+    position: relative;
+    top: 20%;
+    width: 200px;
+height: 200px;
+    grid-template-columns: repeat(6, 1fr);
+ 
+
+
+  }
+  
+ .radial-gradient {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  background: radial-gradient(at center, #62f727, #0906bb, #bb0669);
+  }
+  
+  
+  
+  

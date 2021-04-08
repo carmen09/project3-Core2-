@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(70deg, blue, pink);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 65px;
+  -webkit-box-shadow: 1606px 8px 160px 166px#FFFF66;
+  -moz-box-shadow: 1606px 18px 60px 166px#FFFF66;
+  box-shadow: 160px 8px 160px 166px #FFFF66;
+  
+    
+  }
