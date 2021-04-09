@@ -56,6 +56,7 @@ var artImage = document.createElement("img");
 artImage.classList.add("art-image");
 artImage.src = art.fields.image[0].url;
 artContainer.append(artImage);
+artImage.style.filter(purple-warm) ;
 
 
 })

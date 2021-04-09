@@ -1,10 +1,112 @@
-body {
-    background: linear-gradient(70deg, blue, pink);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 65px;
-  -webkit-box-shadow: 1606px 8px 160px 166px#FFFF66;
-  -moz-box-shadow: 1606px 18px 60px 166px#FFFF66;
-  box-shadow: 160px 8px 160px 166px #FFFF66;
-  
-    
+body{
+  background: url(./assets/homepage.gif) no-repeat top center;
+  background-size: cover;
+         background-attachment: fixed;
+      
+ }
+ 
+ @font-face {
+     font-family: "zerovelo.ttf" ;
+     src: url(/assets/zero/zerovelo.ttf);
   }
+
+  @font-face {
+    font-family: "pdark.ttf" ;
+    src: url(/assets/perfect_dark/pdark.ttf);
+ }
+ h1 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+
+}
+
+ .menu{
+    color: lawngreen;
+     margin-top: 80px;
+ overflow: hidden;
+ font-family:"zerovelo.ttf" ;
+ text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+ }
+ 
+ .menu a {
+  
+     color:#b91567;
+     text-shadow:2px 2px black;
+     text-align: center;
+     padding:10px 26px;
+     text-decoration: none;
+     font-size: 80px;
+     font-stretch: 100%;
+   }
+   
+   /* Change the color of links on hover */
+   .menu a:hover {
+     background-color:	#FAFA37;
+     color: black;
+   }
+   
+   .menu a.active {
+     color:purple;
+   }
+   
+   .filter{
+    position: absolute;
+    right:13%;
+    bottom:5%;
+    }
+    
+    .male {
+    background-color:#b91567;
+   
+width: 300px;
+height: 105px;
+border-radius: 50%;
+
+    }
+    
+    .female{
+      background-color:#b91567;
+   
+      width: 400px;
+      height: 105px;
+      border-radius: 50%;
+    }
+
+   .art-container {
+     position: relative;
+top:20%;
+     box-sizing: border-box;
+     border: 1px solid wheat;
+     border-radius: 25px;
+   }
+   
+ .art-image {
+ 
+ width: 100%;
+ height: auto;
+ 
+   }
+   
+ 
+   
+  .radial-gradient {
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+   background: radial-gradient(at center, #62f727, #0906bb, #bb0669);
+   }
+   
+   .filter{
+     font-family:"pdark.ttf";
+     font-size: 70px;
+     color: 	#50BFE6;
+     text-shadow:2px 2px #FFFF66;
+   }
+   
+   
+   
+ 
