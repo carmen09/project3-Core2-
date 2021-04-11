@@ -65,24 +65,44 @@ body{
 width: 300px;
 height: 105px;
 border-radius: 50%;
+-webkit-animation: male 4s infinite;
+  animation: male 4s infinite;
+}
+@-webkit-keyframes male {
+    0%   {border: 2px solid orange; left:0px; top:0px;}
+    25%  {border: 2px solid red; left:800px; top:200px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:50px; top:200px;}
+    100% {border: 2px solid orange; left:0px; top:0px;}
+}
 
-    }
+
     
     .female{
       background-color:#b91567;
-   
       width: 400px;
       height: 105px;
       border-radius: 50%;
-    }
+      -webkit-animation:female 4s infinite;
+  animation: female 4s infinite;
+}
+@-webkit-keyframes female {
+    0%   {border: 2px solid orange; left:0px; top:0px;}
+    25%  {border: 2px solid red; left:800px; top:200px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:50px; top:200px;}
+    100% {border: 2px solid orange; left:0px; top:0px;}
+}
+
+    
 
    
  
    .art-description {
-    display: none;
    font-size: 15px;
-   color: white;
+   color: yellow;
    font-family: Georgia, 'Times New Roman', Times, serif;
+   display: none;
   }
   
   .art-description.active {
@@ -90,8 +110,7 @@ border-radius: 50%;
   }
   
   .art-image {
-  
-    width: 100%;
+     width: 100%;
     max-width: 400px;
     height: auto;
     display: none;
@@ -120,6 +139,7 @@ border-radius: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    color: violet;
   }
   
   

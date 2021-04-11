@@ -3,7 +3,7 @@ console.log(Airtable);
 
 //use the airtable librar to get a variable that represents one of our bases
 var base = new Airtable({ apiKey: "keymS2olAIhZo74QZ" }).base(
-    "appT8o1qQpBCRhJpX"
+  "appT8o1qQpBCRhJpX"
 );
 //get the "books" table from the base, select ALL the records, and specify the functions that will receive the data
 base("artwork").select({}).eachPage(gotPageOfArts, gotAllArts);
@@ -47,37 +47,66 @@ function consoleLogArts() {
 function showArts() {
   console.log("showArts()");
   arts.forEach((art) => {
-    
+
     var artContainer = document.createElement("div");
     artContainer.classList.add("art-container");
     document.querySelector(".container").append(artContainer);
 
-var artImage = document.createElement("img");
-artImage.classList.add("art-image");
-artImage.src = art.fields.image[0].url;
-artContainer.append(artImage);
-artImage.style.filter(purple-warm) ;
+    var artImage = document.createElement("img");
+    artImage.classList.add("art-image");
+    artImage.src = art.fields.image[0].url;
+    artContainer.append(artImage);
 
 
-})
 
+  })
+
+
+  var xPos = 0;
+var yPos = 0;
+var dX = 0;
+var dY = 0;
+var mouseRaf = null;
+var gradMoveRaf = null;
 
 $(document).mousemove(function(event) {
-    windowWidth = $(window).width();
-    windowHeight = $(window).height();
+  if (!mouseRaf) {
+    mouseRaf = requestAnimationFrame(function() {
+      windowWidth = $(window).width();
+      windowHeight = $(window).height();
+      
+      mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+      mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+
+      dX = mouseXpercentage - xPos;
+      dY = mouseYpercentage - yPos;
     
-    mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-    mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-    
-    $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #62f727, #0906bb, #bb0669');
-  });
-
-
-
-
-    
+      mouseRaf = null;
+    });
+  }
   
+  if (!gradMoveRaf) {
+    gradMoveRaf = requestAnimationFrame(gradMove);
+  }
+});
 
+function gradMove() {
+  xPos += (dX / 50);
+  yPos += (dY / 50);
+
+  $('.rgradient').css('background', 'radial-gradient(at ' + xPos + '% ' + yPos + '%, #e6e6e6, #1e1e1e)');
+  
+  var absX = Math.abs(mouseXpercentage - xPos);
+  var absY = Math.abs(mouseYpercentage - yPos);
+  
+  if (absX < 1 && absY < 1) {
+    gradMoveRaf = null;
+    console.log("stop");
+  } else {
+    gradMoveRaf = requestAnimationFrame(gradMove);
+    console.log("repeat");
+  }
+}
 
 }
 
