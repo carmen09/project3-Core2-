@@ -22,11 +22,13 @@ body{
 }
 
  .menu{
-    color: lawngreen;
-     margin-top: 80px;
- overflow: hidden;
- font-family:"zerovelo.ttf" ;
- text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    padding: 10px;
+  color: lawngreen;
+  margin-top: 80px;
+  overflow: hidden;
+  font-family: "zerovelo.ttf";
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  transform: scale(1,1.5);
  }
  
  .menu a {
@@ -145,7 +147,7 @@ border-radius: 50%;
   
   
   .filter {
-    padding: 2rem;
+    padding: 6rem;
     cursor: pointer;
   }
  

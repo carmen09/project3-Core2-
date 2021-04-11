@@ -17,11 +17,13 @@
     src: url(/assets/zero/zerovelo.ttf);
   }
   .menu {
+    padding: 10px;
     color: lawngreen;
     margin-top: 80px;
     overflow: hidden;
     font-family: "zerovelo.ttf";
     text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    transform: scale(1,1.5);
   }
   .menu a {
     color: #b91567;
@@ -39,6 +41,28 @@
   .menu a.active {
     color: purple;
   }
+.VS{
+    font-size: 100px;
+    font-family: "zerovelo.ttf";
+    color: 	#FF007C;
+  right: 60%;
+  top: 60%;
+    vertical-align: middle;
+  
+}
+  .male{
+      width: 500px;
+      height: auto;
+      float: left;
+
+  }
+  .female{
+    width: 500px;
+    height: auto;
+    transform: rotateY(180deg);
+    float: right;
+    
+}
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

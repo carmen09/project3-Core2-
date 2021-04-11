@@ -17,11 +17,13 @@ body {
   src: url(/assets/zero/zerovelo.ttf);
 }
 .menu {
+  padding: 10px;
   color: lawngreen;
   margin-top: 80px;
   overflow: hidden;
   font-family: "zerovelo.ttf";
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  transform: scale(1,1.5);
 }
 .menu a {
   color: #b91567;
