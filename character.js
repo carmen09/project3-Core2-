@@ -44,18 +44,18 @@ function consoleLogArts() {
 function showArts() {
   console.log("showArts()");
   arts.forEach((art) => {
+    // creating art container, adding to container
     var artContainer = document.createElement("div");
     artContainer.classList.add("art-container");
     document.querySelector(".container").append(artContainer);
+    // creating image and adding it to the art container
     var artImage = document.createElement("img");
     artImage.classList.add("art-image");
     artImage.src = art.fields.image[0].url;
     artContainer.append(artImage);
-   
-
-    var artContainer = document.createElement("div");
-    artContainer.classList.add("art-container");
-    document.querySelector(".container").append(artContainer);
+    // var artContainer = document.createElement("div");
+    // artContainer.classList.add("art-container");
+    // document.querySelector(".container").append(artContainer);
     var artTitle = document.createElement("h1");
     artTitle.classList.add("art-title");
     artTitle.innerText = art.fields.name;
@@ -65,45 +65,44 @@ function showArts() {
     artOrigin.classList.add("art-origin");
     artOrigin.innerText = art.fields.origin;
     artContainer.append(artOrigin);
+    // add description to container
     var artDescription = document.createElement("h1");
     artDescription.classList.add("art-description");
     artDescription.innerText = art.fields.description;
     artContainer.append(artDescription);
+    // open and close container when clicked
     artContainer.addEventListener("click", function (event) {
       artDescription.classList.toggle("active");
       artImage.classList.toggle("active");
+      artOrigin.classList.toggle("active");
     });
-    var artGenre = art.fields.genre;
-    artContainer.classList.add(artGenre);
-    //artGenre.forEach(function (genre) {
-    //artContainer.classList.add(genre);
- //});
+    // add genders as classes to each container
+    var artGender = art.fields.gender;
+    artGender.forEach(function (gender) {
+      artContainer.classList.add(gender);
+    });
     //add event listener to our filter
     //to add an active class to our song
     //add event listener to our filter
     //to add an active class to our song
-    var filterMale = document.querySelector(".male");
+    var filterMale = document.querySelector(".leader");
     filterMale.addEventListener("click", function () {
-      if (artContainer.classList.contains("male")) {
-        artContainer.style.background = "blue";
+      if (artContainer.classList.contains("leader")) {
+        artContainer.style.display = "block";
       } else {
-        artContainer.style.background = "black";
+        artContainer.style.display = "none";
       }
     });
-
-    var filterFemale = document.querySelector(".female");
+    var filterFemale = document.querySelector(".NPC");
     filterFemale.addEventListener("click", function () {
-      if (artContainer.classList.contains("female")) {
-        artContainer.style.background = "pink";
+      if (artContainer.classList.contains("NPC")) {
+        artContainer.style.display = "block";
       } else {
-        artContainer.style.background = "black";
+        artContainer.style.display = "none";
       }
     });
   });
 }
-
-
-
 
 
 

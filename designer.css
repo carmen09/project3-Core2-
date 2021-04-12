@@ -16,14 +16,18 @@
     font-family: "zerovelo.ttf";
     src: url(/assets/zero/zerovelo.ttf);
   }
+  @font-face {
+    font-family: "GameMusic";
+    src: url(/assets/GameMusic.ttf);
+  }
   .menu {
-    padding: 10px;
-    color: lawngreen;
-    margin-top: 80px;
-    overflow: hidden;
-    font-family: "zerovelo.ttf";
-    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
-    transform: scale(1,1.5);
+     padding: 10px;
+  color: lawngreen;
+  margin-top: 80px;
+  overflow: hidden;
+  font-family: "zerovelo.ttf";
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  transform: scale(1,1.5);
   }
   .menu a {
     color: #b91567;
@@ -41,68 +45,150 @@
   .menu a.active {
     color: purple;
   }
-.VS{
-    font-size: 100px;
-    font-family: "zerovelo.ttf";
-    color: 	#FF007C;
-  right: 60%;
-  top: 60%;
-    vertical-align: middle;
-  
-}
-  .male{
-      width: 500px;
-      height: auto;
-      float: left;
 
-  }
-  .female{
-    width: 500px;
-    height: auto;
-    transform: rotateY(180deg);
-    float: right;
-    
-}
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
+  .male{
+    background-color: #b91567;
+   text-align: center;
+    width: 600px;
+    height: 200px;
+    /* height: 105px; */
+    border-radius: 50%;
+    -webkit-animation: leader 4s infinite;
+    animation: leader 4s infinite;
+  }
+  @-webkit-keyframes leader {
+    0% {
+      border: 5px solid orange;
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      border: 5px solid red;
+      left: 800px;
+      top: 200px;
+    }
+    50% {
+      border: 5px solid yellow;
+      left: 200px;
+      top: 60px;
+    }
+    75% {
+      border: 5px solid orange;
+      left: 50px;
+      top: 200px;
+    }
+    100% {
+      border: 5px solid orange;
+      left: 0px;
+      top: 0px;
+    }
+  }
+  .female {
+    background-color: #b91567;
+    width: 500px;
+    text-align: center;
+    height: 180px;
+    border-radius: 50%;
+    -webkit-animation: NPC 4s infinite;
+    animation: NPC 4s infinite;
+  }
+  @-webkit-keyframes NPC {
+    0% {
+      border: 5px solid orange;
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      border: 5px solid red;
+      left: 800px;
+      top: 200px;
+    }
+    50% {
+      border: 5px solid yellow;
+      left: 200px;
+      top: 60px;
+    }
+    75% {
+      border: 5px solid orange;
+      left: 50px;
+      top: 200px;
+    }
+    100% {
+      border: 5px solid orange;
+      left: 0px;
+      top: 0px;
+    }
+  }
+  .art-description.active {
+    display: block;
+  }
+  .art-description{
+    font-size: 20px;
+    color:black;
+    font-family: Helvetica;
+    display: none;
+  }
+  .art-origin {
+    font-size: 25px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+  }
+  .art-origin.active{
+    display: block;
+  }
+  .art-title{
+    font-size: 70px;
+  }
+  
+  .art-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+    display: none;
+  }
+  .art-image.active {
+    display: block;
+  }
   .art-container {
-    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    font-family: "GameMusic";
+    height: auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; */
     padding: 1rem;
     box-sizing: border-box;
-    border: 1px solid wheat;
-    border-radius: 25px;
-    background-color: var(--base);
-    display: flex;
-    /* flex:                1 1 100%; */
-    /* height:              100%; */
-    overflow: hidden;
-    padding: var(--spacing);
-    position: relative;
+  display: none;
+    border: none wheat;
+    border-radius: 50%;
+    color:black;
   }
-  .art-container::before {
-    background-color: var(--foreground);
-    bottom: 0;
-    content: "";
-    /* height:              100%; */
-    left: 0;
-    mix-blend-mode: var(--fg-blend);
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  .image-container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    color: violet;
   }
-  .art-image {
-    object-fit: contain;
+  .filter {
+    padding: 6rem;
+    cursor: pointer;
+  }
+  
+  .radial-gradient {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
     width: 100%;
-    height: 300px;
-    filter: grayscale(100%) contrast(1) blur(0);
-    flex: 1 0 100%;
-    max-width: 100%;
-    mix-blend-mode: var(--bg-blend);
-    opacity: var(--opacity);
-    position: relative;
-    width: 100%;
+    z-index: -1;
+    background: radial-gradient(at center, #62f727, #0906bb, #bb0669);
   }
