@@ -63,28 +63,23 @@
   @-webkit-keyframes leader {
     0% {
       border: 5px solid orange;
-      left: 0px;
-      top: 0px;
+      
     }
     25% {
       border: 5px solid red;
-      left: 800px;
-      top: 200px;
+      
     }
     50% {
       border: 5px solid yellow;
-      left: 200px;
-      top: 60px;
+      
     }
     75% {
       border: 5px solid orange;
-      left: 50px;
-      top: 200px;
+      
     }
     100% {
       border: 5px solid orange;
-      left: 0px;
-      top: 0px;
+      
     }
   }
   .female {
@@ -99,48 +94,27 @@
   @-webkit-keyframes NPC {
     0% {
       border: 5px solid orange;
-      left: 0px;
-      top: 0px;
+    
     }
     25% {
       border: 5px solid red;
-      left: 800px;
-      top: 200px;
+     
     }
     50% {
       border: 5px solid yellow;
-      left: 200px;
-      top: 60px;
+     
     }
     75% {
       border: 5px solid orange;
-      left: 50px;
-      top: 200px;
+      
     }
     100% {
       border: 5px solid orange;
-      left: 0px;
-      top: 0px;
+     
     }
   }
-  .art-description.active {
-    display: block;
-  }
-  .art-description{
-    font-size: 20px;
-    color:black;
-    font-family: Helvetica;
-    display: none;
-  }
-  .art-origin {
-    font-size: 25px;
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    display: none;
-  }
-  .art-origin.active{
-    display: block;
-  }
+  
+  
   .art-title{
     font-size: 70px;
   }

@@ -60,16 +60,8 @@ function showArts() {
     artTitle.classList.add("art-title");
     artTitle.innerText = art.fields.name;
     artContainer.append(artTitle);
-    //add artists
-    var artOrigin = document.createElement("h1");
-    artOrigin.classList.add("art-origin");
-    artOrigin.innerText = art.fields.origin;
-    artContainer.append(artOrigin);
-    // add description to container
-    var artDescription = document.createElement("h1");
-    artDescription.classList.add("art-description");
-    artDescription.innerText = art.fields.description;
-    artContainer.append(artDescription);
+  
+   
     // open and close container when clicked
     artContainer.addEventListener("click", function (event) {
       artDescription.classList.toggle("active");
