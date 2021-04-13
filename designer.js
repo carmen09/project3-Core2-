@@ -47,12 +47,15 @@ function showArts() {
     // creating art container, adding to container
     var artContainer = document.createElement("div");
     artContainer.classList.add("art-container");
-    document.querySelector(".container").append(artContainer);
+    document.querySelector(".art-list").append(artContainer);
     // creating image and adding it to the art container
     var artImage = document.createElement("img");
     artImage.classList.add("art-image");
     artImage.src = art.fields.image[0].url;
     artContainer.append(artImage);
+
+
+    
     // var artContainer = document.createElement("div");
     // artContainer.classList.add("art-container");
     // document.querySelector(".container").append(artContainer);
@@ -64,9 +67,28 @@ function showArts() {
    
     // open and close container when clicked
     artContainer.addEventListener("click", function (event) {
-      artDescription.classList.toggle("active");
-      artImage.classList.toggle("active");
+      artTitle.classList.toggle("active");
     });
+
+    //let artImage = document.querySelector(".image");
+  //  let hoverName= document.querySelector(".show-image);
+
+  //  hoverName.addEventListener("mouseover", function(){
+   // artImage.classList.add("active");
+
+//})
+
+  //  hoverartImage =.addEventListener("mouseout", function(){
+  //  artImage.classList.remove("active");
+
+//})
+//$(document).mousemove(function(e){
+  //  $("#image").stop().animate({left:e.pageX, top:e.pageY});
+//});
+
+
+
+
     // add genders as classes to each container
     var artGender = art.fields.gender;
     artGender.forEach(function (gender) {

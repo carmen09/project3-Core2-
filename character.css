@@ -66,28 +66,23 @@ h1 {
 @-webkit-keyframes leader {
   0% {
     border: 5px solid orange;
-    left: 0px;
-    top: 0px;
+   
   }
   25% {
     border: 5px solid red;
-    left: 800px;
-    top: 200px;
+   
   }
   50% {
     border: 5px solid yellow;
-    left: 200px;
-    top: 60px;
+  
   }
   75% {
     border: 5px solid orange;
-    left: 50px;
-    top: 200px;
+  
   }
   100% {
     border: 5px solid orange;
-    left: 0px;
-    top: 0px;
+   
   }
 }
 .NPC {
@@ -102,28 +97,22 @@ h1 {
 @-webkit-keyframes NPC {
   0% {
     border: 5px solid orange;
-    left: 0px;
-    top: 0px;
+  
   }
   25% {
     border: 5px solid red;
-    left: 800px;
-    top: 200px;
   }
   50% {
     border: 5px solid yellow;
-    left: 200px;
-    top: 60px;
+
   }
   75% {
     border: 5px solid orange;
-    left: 50px;
-    top: 200px;
+  
   }
   100% {
     border: 5px solid orange;
-    left: 0px;
-    top: 0px;
+  
   }
 }
 
