@@ -51,67 +51,13 @@
     grid-template-columns: repeat(5, 1fr);
   }
   .male{
-    background-color: #b91567;
    text-align: center;
-    width: 600px;
-    height: 200px;
-    /* height: 105px; */
-    border-radius: 50%;
-    -webkit-animation: leader 4s infinite;
-    animation: leader 4s infinite;
-  }
-  @-webkit-keyframes leader {
-    0% {
-      border: 5px solid orange;
-      
-    }
-    25% {
-      border: 5px solid red;
-      
-    }
-    50% {
-      border: 5px solid yellow;
-      
-    }
-    75% {
-      border: 5px solid orange;
-      
-    }
-    100% {
-      border: 5px solid orange;
-      
-    }
+
   }
   .female {
-    background-color: #b91567;
-    width: 500px;
-    text-align: center;
-    height: 180px;
-    border-radius: 50%;
-    -webkit-animation: NPC 4s infinite;
-    animation: NPC 4s infinite;
-  }
-  @-webkit-keyframes NPC {
-    0% {
-      border: 5px solid orange;
+text-align: center;
+
     
-    }
-    25% {
-      border: 5px solid red;
-     
-    }
-    50% {
-      border: 5px solid yellow;
-     
-    }
-    75% {
-      border: 5px solid orange;
-      
-    }
-    100% {
-      border: 5px solid orange;
-     
-    }
   }
   
   
