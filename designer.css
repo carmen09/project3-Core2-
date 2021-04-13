@@ -51,17 +51,21 @@
     grid-template-columns: repeat(5, 1fr);
   }
   .male{
+    font-family: "zerovelo.ttf";
+    font-size: 100px;
    text-align: center;
-
+color: 	#FF3399;
   }
   .female {
+    font-family: "zerovelo.ttf";
 text-align: center;
-
+font-size: 100px;
+color: 	#FF3399;
     
   }
   
   
-  .art-title{
+.art-title{
     font-size: 70px;
   }
   
@@ -80,12 +84,9 @@ text-align: center;
     width: 100%;
     font-family: "GameMusic";
     height: auto;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; */
     padding: 1rem;
     box-sizing: border-box;
-  display: none;
+     display: none;
     border: none wheat;
     border-radius: 50%;
     color:black;
