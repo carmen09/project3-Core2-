@@ -8,7 +8,7 @@
     --spacing: 1%;
   }
   body {
-    background: url(./assets/homepage.gif) no-repeat top center;
+    background: url(./assets/home.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -69,8 +69,8 @@ color: 	#FF3399;
   }
   
   .art-image {
-    width: 100%;
-    max-width: 400px;
+    position:absolute;
+    width: 600px;
     margin: 0 auto;
     height: auto;
     display: none;

@@ -65,27 +65,23 @@ function showArts() {
     artContainer.append(artTitle);
   
    
-    // open and close container when clicked
-    artContainer.addEventListener("click", function (event) {
-      artTitle.classList.toggle("active");
-    });
-
-    //let artImage = document.querySelector(".image");
-  //  let hoverName= document.querySelector(".show-image);
-
-  //  hoverName.addEventListener("mouseover", function(){
-   // artImage.classList.add("active");
-
-//})
-
-  //  hoverartImage =.addEventListener("mouseout", function(){
-  //  artImage.classList.remove("active");
-
-//})
-//$(document).mousemove(function(e){
-  //  $("#image").stop().animate({left:e.pageX, top:e.pageY});
-//});
-
+ // open and close container when clicked
+ artContainer.addEventListener("click", function (event) {
+    artTitle.classList.toggle("active");
+  });
+    // when art container is hovered, let image appear // mouseover
+    artTitle.addEventListener("mouseover", function (event) {
+    artImage.classList.toggle("active");
+  });
+   // when not hovering over title, image disappear // mouseout
+   artTitle.addEventListener("mouseout", function (event) {
+    artImage.classList.toggle("active");
+  });
+  // move image with mouse
+  $(document).mousemove(function(e){
+    $(artImage).stop().animate({left:e.pageX, top:e.pageY});
+  });
+   
 
 
 
