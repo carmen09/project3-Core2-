@@ -254,7 +254,36 @@ display: none;
     grid-template-columns: repeat(3, 1fr);
     font-size: 30px;
 }
-
+.art-container{
+  -webkit-animation: art s infinite;
+  animation: art 4s infinite;
+}
+  @-webkit-keyframes art {
+    0% {
+  
+      border: 5px solid orange;
+    
+    }
+    25% {
+  
+      border: 5px solid red;
+    }
+    50% {
+      
+      border: 5px solid yellow;
+  
+    }
+    75% {
+   
+      border: 5px solid orange;
+    
+    }
+    100% {
+     
+      border: 5px solid orange;
+    
+    }
+}
 .menu a {
  
   font-size: 40px;
