@@ -177,18 +177,31 @@ background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, 
   }
   .filter {
     font-family: "pdark.ttf";
-    font-size: 40px;
+    font-size: 30px;
     color: #50bfe6;
     text-shadow: 2px 2px #ffff66;
   }
 
-  .art-title{
-    font-size: 34px;
+ 
+  .male-designer{
+    font-family: "zerovelo.ttf";
+    font-size: 40px;
+    color: 	#FF3399;
+    float: right;
+    width: 200px;
+    height: 100px;
   }
-  .art-origin {
-    font-size: 20px;
-  }
-  .art-description{
-    font-size: 15px;
-  }
+  .female-designer{
+    font-family: "zerovelo.ttf";
+font-size: 40px;
+color: 	#FF3399;
+float: left;
+width: 200px;
+height: 100px;
+
+}
+.art-title{
+  font-size: 40px;
+}
+
   }

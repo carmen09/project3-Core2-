@@ -69,7 +69,7 @@ h1 {
   text-align: center;
   height: 180px;
   border-radius: 50%;
-  -webkit-animation: leader 4s infinite;
+  -webkit-animation: leader 8s infinite;
   animation: leader 4s infinite;
 }
   @-webkit-keyframes leader {
@@ -121,7 +121,7 @@ h1 {
   text-align: center;
   height: 180px;
   border-radius: 50%;
-  -webkit-animation: NPC 4s infinite;
+  -webkit-animation: NPC 8s infinite;
   animation: NPC 4s infinite;
 }
   @-webkit-keyframes NPC {
@@ -200,7 +200,7 @@ display: none;
   border: none wheat;
   border-radius: 50%;
   color:black;
-  -webkit-animation: art 4s infinite;
+  -webkit-animation: art s infinite;
   animation: art 4s infinite;
 }
   @-webkit-keyframes art {
