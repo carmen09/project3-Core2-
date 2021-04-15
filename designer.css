@@ -77,10 +77,12 @@ float: right;
     width: 600px;
     height: 300px;
     text-align: center;
+    border: solid 5px yellow;
     border-radius: 50%;
     background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);;
       animation: rotation 50s infinite linear;
     }
+    
     
     @keyframes rotation {
       from {
@@ -106,6 +108,7 @@ font-size: 100px;
 color: 	#FF3399;
 float: left;
 width: 600px;
+border: solid 5px yellow;
 height: 300px;
 text-align: center;
 border-radius: 50%;
@@ -181,21 +184,23 @@ background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, 
     text-shadow: 2px 2px #ffff66;
   }
 
- 
+ .container{
+   padding: 40px;
+  display: block;
+ }
   .male-designer{
-  
+  padding: 5px;
     font-family: "zerovelo.ttf";
     font-size: 40px;
     color: 	#FF3399;
-    float: right;
     width: 200px;
     height: 100px;
   }
   .female-designer{
+    padding: 5px;
     font-family: "zerovelo.ttf";
 font-size: 40px;
 color: 	#FF3399;
-float: left;
 width: 200px;
 height: 100px;
 
