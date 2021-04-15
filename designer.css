@@ -14,11 +14,11 @@
   }
   @font-face {
     font-family: "zerovelo.ttf";
-    src: url(/assets/zero/zerovelo.ttf);
+    src: url(./assets/zero/zerovelo.ttf);
   }
   @font-face {
     font-family: "GameMusic";
-    src: url(/assets/GameMusic.ttf);
+    src: url(./assets/GameMusic.ttf);
   }
   .menu {
      padding: 10px;

@@ -16,7 +16,7 @@ body {
 }
 @font-face {
   font-family: "zerovelo.ttf";
-  src: url(/assets/zero/zerovelo.ttf);
+  src: url(./assets/zero/zerovelo.ttf);
 }
 .menu {
   padding: 10px;
