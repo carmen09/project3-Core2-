@@ -85,7 +85,7 @@ function showArts() {
     //to add an active class to our song
     //add event listener to our filter
     //to add an active class to our song
-    var filterMale = document.querySelector(".leader");
+    var filterMale = document.querySelector(".leader-button");
     filterMale.addEventListener("click", function () {
       if (artContainer.classList.contains("leader")) {
         artContainer.style.display = "block";
@@ -93,7 +93,7 @@ function showArts() {
         artContainer.style.display = "none";
       }
     });
-    var filterFemale = document.querySelector(".NPC");
+    var filterFemale = document.querySelector(".npc-button");
     filterFemale.addEventListener("click", function () {
       if (artContainer.classList.contains("NPC")) {
         artContainer.style.display = "block";

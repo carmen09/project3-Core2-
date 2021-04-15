@@ -70,7 +70,7 @@ color: 	#FF3399;
   
   .art-image {
     position:absolute;
-    width: 600px;
+    width: 750px;
     margin: 0 auto;
     height: auto;
     display: none;
@@ -86,7 +86,7 @@ color: 	#FF3399;
     padding: 1rem;
     box-sizing: border-box;
      display: none;
-    border: none wheat;
+    border: 5px wheat;
     border-radius: 50%;
     color:black;
   }
@@ -101,14 +101,4 @@ color: 	#FF3399;
   .filter {
     padding: 6rem;
     cursor: pointer;
-  }
-  
-  .radial-gradient {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: radial-gradient(at center, #62f727, #0906bb, #bb0669);
   }

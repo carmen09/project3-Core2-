@@ -60,72 +60,106 @@ h1 {
   height: 200px;
   /* height: 105px; */
   border-radius: 50%;
+}
+.leader-button{
+  position: fixed;
+  background-color: #b91567;
+  width: 600px;
+  text-align: center;
+  height: 180px;
+  border-radius: 50%;
   -webkit-animation: leader 4s infinite;
   animation: leader 4s infinite;
 }
-@-webkit-keyframes leader {
-  0% {
-    border: 5px solid orange;
-   
-  }
-  25% {
-    border: 5px solid red;
-   
-  }
-  50% {
-    border: 5px solid yellow;
+  @-webkit-keyframes leader {
+    0% {
+      top: 450px;
+      right: 80px;
+      border: 5px solid orange;
+    
+    }
+    25% {
+      top: 350px;
+      right: 400px;
+      border: 5px solid red;
+    }
+    50% {
+      top: 350px;
+      right: 80px;
+      border: 5px solid yellow;
   
+    }
+    75% {
+      top: 450px;
+      right: 80px;
+      border: 5px solid orange;
+    
+    }
+    100% {
+      top: 250px;
+      right: 30px;
+      border: 5px solid orange;
+    
+    }
   }
-  75% {
-    border: 5px solid orange;
-  
-  }
-  100% {
-    border: 5px solid orange;
-   
-  }
-}
+
+ 
 .NPC {
   background-color: #b91567;
   width: 500px;
+  text-align: center;
+  height: 180px;
+  border-radius: 50%;
+  
+}
+
+.npc-button{
   position: fixed;
+  background-color: #b91567;
+  width: 500px;
   text-align: center;
   height: 180px;
   border-radius: 50%;
   -webkit-animation: NPC 4s infinite;
   animation: NPC 4s infinite;
 }
-@-webkit-keyframes NPC {
-  0% {
-    top: 250px;
-    left: 30px;
-    border: 5px solid orange;
+  @-webkit-keyframes NPC {
+    0% {
+      top: 250px;
+      left: 30px;
+      border: 5px solid orange;
+    
+    }
+    25% {
+      top: 250px;
+      left: 400px;
+      border: 5px solid red;
+    }
+    50% {
+      top: 250px;
+      left: 30px;
+      border: 5px solid yellow;
   
+    }
+    75% {
+      top: 400px;
+      left: 400px;
+      border: 5px solid orange;
+    
+    }
+    100% {
+      top: 250px;
+      left: 30px;
+      border: 5px solid orange;
+    
+    }
   }
-  25% {
-    top: 250px;
-    left: 400px;
-    border: 5px solid red;
-  }
-  50% {
-    top: 250px;
-    left: 30px;
-    border: 5px solid yellow;
 
-  }
-  75% {
-    top: 400px;
-    left: 400px;
-    border: 5px solid orange;
-  
-  }
-  100% {
-    top: 30px;
-    left: 30px;
-    border: 5px solid orange;
-  
-  }
-}
+
+
+
+
+
 
 .art-description.active {
   display: block;
@@ -173,6 +207,7 @@ display: none;
   border: none wheat;
   border-radius: 50%;
   color:black;
+
 }
 .image-container {
   width: 400px;
@@ -181,6 +216,8 @@ display: none;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   color: violet;
+  border: 5px solid orange;
+
 }
 .filter {
   padding: 6rem;
