@@ -177,13 +177,13 @@ background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, 
   }
   .filter {
     font-family: "pdark.ttf";
-    font-size: 30px;
     color: #50bfe6;
     text-shadow: 2px 2px #ffff66;
   }
 
  
   .male-designer{
+  
     font-family: "zerovelo.ttf";
     font-size: 40px;
     color: 	#FF3399;
@@ -203,5 +203,10 @@ height: 100px;
 .art-title{
   font-size: 40px;
 }
+.art-image {
+  position:absolute;
+  width: 350px;}
+
+
 
   }
