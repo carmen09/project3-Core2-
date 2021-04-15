@@ -43,6 +43,7 @@ h1 {
 .menu a:hover {
   background-color: #fafa37;
   color: black;
+  border-radius: 50%;
 }
 .menu a.active {
   color: purple;
@@ -156,17 +157,12 @@ h1 {
   }
 
 
-
-
-
-
-
 .art-description.active {
   display: block;
 }
 .art-description{
   font-size: 20px;
-  color:black;
+  color:white;
   font-family: Helvetica;
   display: none;
 }
@@ -193,22 +189,47 @@ h1 {
 .art-image.active {
   display: block;
 }
+
 .art-container {
-  font-size: 2rem;
   width: 100%;
   font-family: "GameMusic";
   height: auto;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px; */
   padding: 1rem;
   box-sizing: border-box;
 display: none;
   border: none wheat;
   border-radius: 50%;
   color:black;
-
+  -webkit-animation: art 4s infinite;
+  animation: art 4s infinite;
 }
+  @-webkit-keyframes art {
+    0% {
+  
+      border: 5px solid orange;
+    
+    }
+    25% {
+  
+      border: 5px solid red;
+    }
+    50% {
+      
+      border: 5px solid yellow;
+  
+    }
+    75% {
+   
+      border: 5px solid orange;
+    
+    }
+    100% {
+     
+      border: 5px solid orange;
+    
+    }
+  }
+
 .image-container {
   width: 400px;
   height: 400px;
@@ -216,7 +237,7 @@ display: none;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   color: violet;
-  border: 5px solid orange;
+
 
 }
 .filter {
@@ -227,12 +248,48 @@ display: none;
 }
 
 
-.radial-gradient {
+
+@media only screen and (max-width: 458px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 30px;
+}
+
+.menu a {
+ 
+  font-size: 40px;
+}
+.filter {
+  font-family: "pdark.ttf";
+  font-size: 40px;
+  color: #50bfe6;
+  text-shadow: 2px 2px #ffff66;
+}
+.npc-button{
   position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background: radial-gradient(at center, #62f727, #0906bb, #bb0669);
+  background-color: #b91567;
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  border-radius: 50%;
+ 
+}
+.leader-button{
+  position: fixed;
+  background-color: #b91567;
+  width: 300px;
+  text-align: center;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.art-title{
+  font-size: 34px;
+}
+.art-origin {
+  font-size: 20px;
+}
+.art-description{
+  font-size: 15px;
+}
 }

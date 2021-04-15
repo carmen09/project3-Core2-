@@ -94,7 +94,7 @@ function showArts() {
     //to add an active class to our song
     //add event listener to our filter
     //to add an active class to our song
-    var filterMale = document.querySelector(".male");
+    var filterMale = document.querySelector(".male-designer");
     filterMale.addEventListener("click", function () {
       if (artContainer.classList.contains("male")) {
         artContainer.style.display = "block";
@@ -102,7 +102,7 @@ function showArts() {
         artContainer.style.display = "none";
       }
     });
-    var filterFemale = document.querySelector(".female");
+    var filterFemale = document.querySelector(".female-designer");
     filterFemale.addEventListener("click", function () {
       if (artContainer.classList.contains("female")) {
         artContainer.style.display = "block";
@@ -112,5 +112,3 @@ function showArts() {
     });
   });
 }
-
-

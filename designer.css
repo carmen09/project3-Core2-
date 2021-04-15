@@ -7,6 +7,7 @@
     --opacity: 1;
     --spacing: 1%;
   }
+  
   body {
     background: url(./assets/home.jpg) no-repeat top center;
     background-size: cover;
@@ -36,6 +37,7 @@
     text-decoration: none;
     font-size: 80px;
     font-stretch: 100%;
+    border-radius: 50%;
   }
   /* Change the color of links on hover */
   .menu a:hover {
@@ -49,20 +51,79 @@
   .container {
     display: grid;
   }
+  body {
+    background-color: black;
+  }
+  
+
+  .filter {
+    padding: 6rem;
+    cursor: pointer;
+    text-shadow: 2px 2px #ffff66;
+  }
+  
   .male{
     font-family: "zerovelo.ttf";
     font-size: 100px;
-   text-align: center;
 color: 	#FF3399;
+float: right;
   }
-  .female {
+  .male-designer{
+    
     font-family: "zerovelo.ttf";
-text-align: center;
+    font-size: 100px;
+    color: 	#FF3399;
+    float: right;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);;
+      animation: rotation 50s infinite linear;
+    }
+    
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+
+  }
+  .female {    
+font-family: "zerovelo.ttf";
 font-size: 100px;
 color: 	#FF3399;
+float: left;
+border-radius: 50%;
+
     
   }
+  .female-designer{
+    font-family: "zerovelo.ttf";
+font-size: 100px;
+color: 	#FF3399;
+float: left;
+width: 600px;
+height: 300px;
+text-align: center;
+border-radius: 50%;
+background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);;
+  animation: rotation 50s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
   
+
   
 .art-title{
     font-size: 70px;
@@ -74,6 +135,7 @@ color: 	#FF3399;
     margin: 0 auto;
     height: auto;
     display: none;
+    text-align: center;
   }
   .art-image.active {
     display: block;
@@ -81,6 +143,7 @@ color: 	#FF3399;
   .art-container {
     font-size: 2rem;
     width: 100%;
+    text-align: center;
     font-family: "GameMusic";
     height: auto;
     padding: 1rem;
@@ -88,7 +151,9 @@ color: 	#FF3399;
      display: none;
     border: 5px wheat;
     border-radius: 50%;
-    color:black;
+    color:#ffff66;
+    letter-spacing: 0.4rem;
+    text-shadow: 5px 5px	#FF9933;
   }
   .image-container {
     width: 400px;
@@ -97,8 +162,7 @@ color: 	#FF3399;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     color: violet;
+    letter-spacing: .2rem;
+
   }
-  .filter {
-    padding: 6rem;
-    cursor: pointer;
-  }
+
